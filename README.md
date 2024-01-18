@@ -29,14 +29,14 @@ CREATE TABLE users (
   PRIMARY KEY (user_key)
 );
 
-CREATE TABLE posts (
+CREATE TABLE comments (
   user_key INT NOT NULL,
-  posts_key INT NOT NULL AUTO_INCREMENT, -- 고유 포스트 키
-  posts_content TEXT NOT NULL,
-  posts_time DATETIME NOT NULL,
-  posts_deleted boolean DEFAULT FALSE,
-  posts_deleted_time DATETIME,  
-  PRIMARY KEY (posts_key),
+  comments_key INT NOT NULL AUTO_INCREMENT, -- 고유 포스트 키
+  comments_content TEXT NOT NULL,
+  comments_time DATETIME NOT NULL,
+  comments_deleted boolean DEFAULT FALSE,
+  comments_deleted_time DATETIME,  
+  PRIMARY KEY (comments_key),
   FOREIGN KEY (user_key) REFERENCES users (user_key)
 );
 ```

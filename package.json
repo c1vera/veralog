@@ -1,0 +1,19 @@
+{
+  "name": "verark",
+  "version": "1.0.0",
+  "description": "> 로스트아크 `Open API` 를 이용한 `채언님` 유저 블로그 \r > \r ## 프로젝트 설명\r > 순수 자바스크립트만을 사용하여 구현된 프로젝트이다.\r > `모던 자바스크립트 Deep Dive` 교재를 참고해 구현했다.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jquery": "^3.7.1",
+    "livereload": "^0.9.3",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.7.0"
+  }
+}
